@@ -10,14 +10,27 @@
 
 <div ng-controller="myController">
  <h1>{{firstName}}</h1>
- <p>{{ime}}</p>
+ <input type="text" ng-model="employee1.ime"/>
  <br/>
- <p>ime : {{employee1.ime}}</p>
   <p>prezime : {{employee1.prezime}}</p>
    <p>ime : {{employee1.ulica}}</p>
     <p>ime : {{employee1.broj}}</p>
+<br/>
 
- </div>
+<p>{{employee1.ime}}</p>
+
+<hr/>
+<h3>Name : {{ljepotica.ime}} / {{ljepotica.dimenzija}}</h3>
+<img ng-src="{{ljepotica.image}}" alt="{{ljepotica.ime}}" style="height:400px; width:600px;">
+<br/>
+
+
+ <input type="text" ng-model="msg"/>
+ {{msg}}
+</div>
+
+
+
 
 </div>
 <p>uzeto s https://www.youtube.com/watch?v=zKkUN-mJtPQ&feature=youtu.be</p>
