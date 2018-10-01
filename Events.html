@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/events.js"></script>
+
+<style type="text/css">
+	
+tr{
+border: solid black 1px; padding: 5px;
+}
+td {
+	border: solid black 1px; padding: 5px;
+}
+
+th{
+	border: solid black 1px; padding: 5px; text-align: left
+}
+
+</style>
+
+
+<body ng-app="eventModule">
+
+<div ng-controller="conrtroleerEvents">
+
+
+
+<table style="border-collapse: collapse; font-family:Arial">
+	<thead>
+		<tr>
+			<th>name</th>
+			<th>like</th>
+			<th>dislikes</th>
+			<th>btn</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat="tec in tech" style="border: solid black 1px; padding: 5px;">
+			<td>>{{  tec.name }}</td>
+			<td>{{  tec.like }}</td>
+			<td> {{  tec.dislike }}</td> 
+		
+			<td> <button ng-click="IncrementLike(tec)">Like</button> 
+			 <input type="button" value="dislike" ng-click="IncrementDisLike(tec)"></td>
+		</tr>
+	</tbody>
+
+
+</table>
+
+
+
+</div>
+https://www.youtube.com/watch?v=8bf5aZSWp9A&list=PL6n9fhu94yhWKHkcL7RJmmXyxkuFB3KSl&index=7
+</body>
+</html>

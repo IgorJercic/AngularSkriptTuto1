@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/scripta2.js"></script>
+
+<body ng-app="modul2">
+
+<div ng-controller="controler2">
+
+<table>
+  <thead>
+<tr>
+  <th>First name</th>
+    <th>Last name</th>
+      <th>Gender</th>
+        <th>Salary</th>
+</tr>
+  </thead>
+  <tbody>
+
+<tr ng-repeat="employee in employeees">
+<td>{{ employee.firstName }}</td>
+<td>{{ employee.lastName }}</td>
+<td>{{ employee.gender }}</td>
+<td>{{ employee.salary }}</td>
+</tr>
+
+</tbody>
+  </table>
+
+ <br/>
+
+
+
+	<ul> 
+		<li ng-repeat="countries in countries_">{{ countries.name}} - index {{ $index }}
+			<ul >
+				<li ng-repeat="city in countries.cities">{{ city.name }} - index {{$index}} - parent index {{ $parent.$index }}</li>
+			</ul>
+		</li>
+		
+	</ul>
+
+
+
+https://www.youtube.com/watch?v=MzqkIZLkBsU&index=6&list=PL6n9fhu94yhWKHkcL7RJmmXyxkuFB3KSl
+
+</div>
+
+</body>
+</html>

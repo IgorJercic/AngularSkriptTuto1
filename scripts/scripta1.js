@@ -19,6 +19,8 @@ image : "Images/1.jpg"
 $scope.ljepotica = Ljepotica;
 $scope.msg = "";
 
+$scope.h = "hello";
 
 
-})
+
+});
